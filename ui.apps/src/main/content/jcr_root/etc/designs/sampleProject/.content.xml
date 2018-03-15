@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-03-16T01:08:48.031+05:30"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="sampleWebsite Design"
+        sling:resourceType="wcm/core/components/designer">
+        <page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/parsys"
+                components="[group:sampleProject]">
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sampleProject/components/content/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns (50%, 50%)"/>
+                <cq:authoring jcr:primaryType="nt:unstructured">
+                    <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                        <image
+                            jcr:primaryType="nt:unstructured"
+                            assetGroup="media"
+                            assetMimetype="image/*"
+                            droptarget="image"
+                            resourceType="sampleProject/components/content/image"
+                            type="Images"/>
+                    </assetToComponentMapping>
+                </cq:authoring>
+            </par>
+            <logo
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="sampleProject/components/structure/logo"
+                absParent="2">
+                <image/>
+            </logo>
+        </page>
+        <samplePage jcr:primaryType="nt:unstructured">
+            <ipar
+                jcr:lastModified="{Date}2018-03-16T00:32:24.713+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="group:sampleProject">
+                <section jcr:primaryType="nt:unstructured"/>
+            </ipar>
+            <par1
+                jcr:lastModified="{Date}2018-03-13T18:30:49.556+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="[foundation/components/image,foundation/components/title,foundation/components/list,foundation/components/textimage]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par1>
+            <par2
+                jcr:lastModified="{Date}2018-03-13T18:30:49.556+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="[foundation/components/sitemap,foundation/components/download,foundation/components/reference]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par2>
+            <footerpar
+                jcr:lastModified="{Date}2018-03-16T00:37:37.752+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/iparsys"
+                components="/apps/sampleProject/components/content/footer">
+                <section jcr:primaryType="nt:unstructured"/>
+            </footerpar>
+        </samplePage>
+        <childPage jcr:primaryType="nt:unstructured">
+            <parsys1
+                jcr:lastModified="{Date}2018-03-16T01:08:48.018+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:sampleProject">
+                <section jcr:primaryType="nt:unstructured"/>
+            </parsys1>
+        </childPage>
+    </jcr:content>
+    <clientlib-all/>
+    <clientlib-site/>
+    <favicon.ico/>
+    <rep:policy/>
+</jcr:root>

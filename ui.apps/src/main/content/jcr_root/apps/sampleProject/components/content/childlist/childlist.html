@@ -1,0 +1,12 @@
+<div class="component"><h3>Sample component to display the child pages.</h3>
+
+<h5>The parent path for the sample is "/content/we-retail</h5>
+<div data-sly-use.children="sampleProject.core.ChildPages">
+
+<ul data-sly-list.myitem="${children.childPages}" data-sly-unwrap>
+  <li style="margin-left:25px;"><a href="${myitem.path}.html"> ${myitem.title} </a></li>
+</ul> 
+
+
+</div>
+

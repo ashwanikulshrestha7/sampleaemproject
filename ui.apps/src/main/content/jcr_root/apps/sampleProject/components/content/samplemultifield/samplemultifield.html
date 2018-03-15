@@ -1,0 +1,19 @@
+<div class="multi"><h3>MultiField component with Image title and RTE</h3></div>
+
+<div data-sly-use.children="sampleProject.core.MultiFieldComponent">
+
+<div data-sly-list.myitem="${children.multifielditems}" data-sly-unwrap>
+    <div class ="text" style="float: right;margin-right: 35%;">
+
+   <h4>${myitem.title} </h4>
+   ${myitem.text @context='html'}</div>
+    <div class="image" style="height: 201px;"><img src="${myitem.image}" style="height:100%;"/></div>
+</br>
+<hr>
+</div>
+
+</div> 
+
+
+</div>
+

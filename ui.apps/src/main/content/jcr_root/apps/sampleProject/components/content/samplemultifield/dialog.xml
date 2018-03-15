@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="600"
+    title="Sample Multifield Component"
+    width="800"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Fields">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <options
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Multifield Component Fields"
+                        fieldLabel="Options"
+                        name="./optionsList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multifield-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="true"
+                                    dName="Value"
+                                    fieldDescription="Enter Title"
+                                    fieldLabel="Title"
+                                    name="./optionValue"
+                                    xtype="textfield"/>
+                                <displaytext
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="true"
+                                    dName="txt"
+                                    fieldDescription="Enter Rich text"
+                                    fieldLabel="Rich text area"
+                                    name="./optionDisplayText1"
+                                    xtype="richtext"/>
+                                <path
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="true"
+                                    dName="image"
+                                    fieldDescription="Enter Image Path"
+                                    fieldLabel="Drop the image from Content finder"
+                                    name="./image"
+                                    rootPath="/content/dam"
+                                    xtype="pathfield"/>
+                            </items>
+                        </fieldConfig>
+                    </options>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
